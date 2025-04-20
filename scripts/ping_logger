@@ -1,0 +1,16 @@
+#!/bin/bash 
+TARGETS=("www.unifr.ch" "www.knust.edu.gh" "www.trentu.ca" "english.hi.is")
+NAMES=("unifr" "knust" "trentu" "english")
+
+for i in "${!TARGETS[@]}"; do #OUR index counter ... 0 1 2 3
+TARGET="${TARGETS[$i]}" # values of our indexes
+NAME="${NAMES[$i]}"
+
+TIMESTAMP=$(date +"%Y-%m-%d-%H-%M")
+LOG_PATH="/storage/nrh22hvu/courseWork/logs/ping/${NAME}-${TIMESTAMP}.log"
+
+echo "Script started at $(date)" >> "$LOG_PATH" 
+(ping -c 120 "$TARGET" | tail -2) >> "$LOG_PATH" 2>&1 & 
+done
+
+
