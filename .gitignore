@@ -1,1 +1,11 @@
+# Ignore all logs
+logs/ping/
+logs/traceroute/
+logs/wget/
 
+# Ignore all .log files (just in case)
+*.log
+
+# Ignore HTML files from wget (if any were saved)
+*.html
+*.html.*
