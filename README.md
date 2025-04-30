@@ -20,7 +20,7 @@ This project automates the logging of internet perfomance data using 4 global ac
 
 | Domain             | Country        | Notes                                   |
 |--------------------|----------------|------------------------------------------|
-| cern.ch            | Switzerland 🇨🇭 | Most stable RTT, reached final hop       |
+| english.hi.is      | Iceland is     | Most stable RTT, reached final hop       |
 | www.knust.edu.gh   | Ghana 🇬🇭       | Some route changes, medium latency       |
 | www.trentu.ca      | Canada 🇨🇦      | Routed via CANARIE, fast throughput      |
 | www.unifr.ch       | Switzerland 🇨🇭 | Final hop firewalled, but trace stable   |
